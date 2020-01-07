@@ -19,25 +19,6 @@
   </head>
   <body>
 
-<!-- NavBar Begins (TODO: Reduce redundancy using jquery)-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="research.html">Research and Publications</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<!-- NavBar Ends-->
-
     <!-- Content Begins -->
 <div class="row">
   <div class="container-fluid">
@@ -46,16 +27,18 @@
 <section>
               <div class="row">
               <div class="col-lg-3">
+                <p></p>
                 <p class="pull-down"><img src="img/KrishnaGiri.jpg" alt="Krishna Giri Narra" style="width:5cm;"></p>
               </div>
 
               <div class="col-lg-9">
-                <h2>Hema Venkata Krishna Giri Narra</h2>
+                <p></p>
+                <h3>Hema Venkata Krishna Giri Narra (Krishna)</h3>
                 <address>
-                  <a href="https://minghsiehece.usc.edu/">Ming Hsieh Department of Electrical and Computer Engineering</a><br>
-                  <a href="https://www.usc.edu/">University of Southern California</a><br>
+                  Ming Hsieh Department of Electrical and Computer Engineering<br>
+                  University of Southern California<br>
                   3740 McClintock Avenue, EEB 224, Los Angeles, CA 90089<br>
-                  Email: <a href="mailto:narra@usc.edu">narra@usc.edu</a><br>
+                  Email: narra at usc.edu<br>
                   <a href="https://scholar.google.com/citations?user=9hs6aXkAAAAJ&hl=en">Google Scholar</a> &middot;
                   <a href ="https://www.researchgate.net/profile/Krishna_Giri_Narra">ResearchGate</a> &middot;
                   <a href ="https://www.linkedin.com/in/krishnagirinarra">LinkedIn</a> &middot;
@@ -63,18 +46,84 @@
                 </address>
               </div>
             </div>
+</section>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+<div class="offset-lg-2 col-lg-9">
+<!-- NavBar Begins (TODO: Reduce redundancy using jquery)-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse offset-lg-0 col-lg-9" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#research">Research Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pubs">Publications</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- NavBar Ends-->
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="col-lg-10 col-lg-offset-1">
+<section id="home">
+<p></p>
 <div class="alert alert-primary" role="alert">
 	I am looking for machine learning related software positions starting from May 2020. I am open to both research related and development related positions. 
 </div>
 <button type="button" class="btn btn-light"><a href="pdf/Resume_KrishnaGiri.pdf">Curriculum Vitae</a></button>
 
 <h3>About Me</h3>
-<p> I am currently a Ph.D. candidate in Computer Engineering at University of Southern California (USC) working under the guidance of <a href="https://annavar.am">Professor Murali Annavaram</a>. As part of my thesis, I worked on improving the performance and privacy of machine learning systems. I interned at Samsung and SanDisk during my Ph.D. Prior to starting Ph.D. I worked for two years at Intel. I received M.S. in Computer Science from USC. I received Bachelors in Technology in Electrical Engineering from IIT Madras.</p>
+<p> I am currently a Ph.D. candidate in Computer Engineering at University of Southern California (USC) working under the guidance of <a href="https://annavar.am">Professor Murali Annavaram</a>. As part of my thesis, I worked on improving the performance and privacy of machine learning systems. I interned at Samsung and SanDisk during my Ph.D. Prior to starting Ph.D. I worked for two years at Intel. I completed my M.S. in Computer Science from USC and my Bachelors of Technology in Electrical Engineering from Indian Institute of Technology, Madras.</p>
+</section>
 
-<h3 >Research Projects</h3>
-<p> </p>
+<section id="research">
+<h3>Selected Research Projects</h3>
+<p>
+<h6> Origami Inference: Private Inference Using Hardware Enclaves </h6>
+•	Designed and implemented Origami framework that partitions DNN models between secure hardware enclaves and unsecure accelerators. <br>
+•	Evaluated the Origami framework on Intel SGX enclaves and demonstrated that up to 15x speedup in inference latency can be achieved compared to running the full model inside the secure SGX enclave. <br> <br>
 
-  </section>
+<h6>Collage Inference: Using Coded Redundancy for Lowering Variance of Distributed Image Classification Systems</h6>
+•	Proposed collage-cnn models that perform multi-image classification and used them as low-cost redundancies to mitigate slowdowns in distributed inference systems. <br>
+•	Demonstrated that collage-cnn models can reduce 99-th percentile latency upto 2x compared to alternate approaches. <br><br>
+
+<h6>S2C2: Slack Squeeze Coded Computing for Adaptive Straggler Mitigation </h6>
+•	Proposed S2C2 which exploits the data redundancy available in coded data and elastically distributes work based on speeds predicted from a LSTM model.<br>
+•	S2C2 reduced the total compute latency by up to 39.3% over the conventional coded computation and by up to 19% over fine-grained replication.<br><br>
+
+<h6>GradiVeQ: Vector Quantization for Bandwidth-Efficient Gradient Aggregation in Distributed CNN Training</h6>
+•	Proposed GradiVeQ, a novel gradient compression technique that can significantly reduce the communication load in distributed CNN training.<br>
+•	GradiVeQ reduces the end-to-end training time by 4x over the uncompressed method and 1.4x over 4-bit-QSGD.<br>
+</p>
+</section> 
+
+<section id="pubs">
+<h3>Publications</h3>
+<p>
+•	<strong> <font color="brown">SC 2019 </font></strong> Krishna Giri Narra*, Zhifeng Lin*, Mehrdad Kiamari, Salman Avestimehr, Murali Annavaram, “Slack Squeeze Coded Computing for Adaptive Straggler Mitigation”. Published at the Supercomputing Conference (SC 2019). [* equal contribution]<br> 
+•	<strong> <font color="brown">ICML 2019 </font> </strong> Krishna Giri Narra, Zhifeng Lin, Ganesh Ananthanarayanan, Salman Avestimehr, Murali Annavaram, “Collage Inference: Achieving low tail latency during distributed image classification using coded redundancy models”. CodML workshop at ICML 2019. <br>
+•   <strong> <font color="brown">ARXIV 2019 </font> </strong> Krishna Giri Narra, Zhifeng Lin, Yongqin Wang, Keshav Balasubramaniam, Murali Annavaram, “Origami Inference: Private Inference Using Hardware Enclaves”. ARXIV, abs/1912.03485, 2019. <br>
+•   <strong> <font color="brown">ARXIV 2019 </font> </strong> Krishna Giri Narra, Zhifeng Lin, Ganesh Ananthanarayanan, Salman Avestimehr, Murali Annavaram, “Collage Inference: Using Coded Redundancy for Low Variance Distributed Image Classification”. ARXIV, abs/1904.12222, 2019. <br>
+•   <strong> <font color="brown">ARXIV 2019 </font> </strong> Zhifeng Lin, Krishna Giri Narra, Mingchao Yu, Salman Avestimehr, Murali Annavaram, “Train Where the Data is: A Case for Bandwidth Efficient Coded Training. ARXIV, abs/1910.10283, 2019. <br>
+•	<strong> <font color="brown">NeurIPS 2018 </font> </strong> Mingchao Yu*, Zhifeng Lin*, Krishna Giri Narra, Songze Li, Youjie Li, Nam Sung Kim, Alexander G. Schwing, Murali Annavaram, Salman Avestimehr, “GradiVeQ: Vector Quantization for Bandwidth-Efficient Gradient Aggregation in Distributed CNN Training”. Published at NeurIPS 2018. [* equal contribution] <br>
+•   <strong> <font color="brown">MICRO 2017 </font> </strong> Gunjae Koo*, Kiran Matam*, Te I, Krishna Giri Narra, Jing Li, Hung-Wei Tseng, Steven Swanson, Murali Annavaram, “Summarizer: Trading communication with computing near storage”. Published at IEEE International Symposium on Microarchitecture (MICRO 2017). [* equal contribution]<br>
+•   <strong> <font color="brown">Soft Computing 2015 </font> </strong> L.Srivani, N.H.V.Krishna Giri, Shankar Ganesh, V.Kamakoti, “Generating Synthetic Benchmark Circuits for Accelerated Life Testing of Field Programmable Gate Arrays using Genetic Algorithm and Particle Swarm Optimization”, Applied Soft Computing, Volume 27, February 2015. <br>
+</p>
+</section> 
+
   </div>
 </div>
 </div>
